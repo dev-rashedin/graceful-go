@@ -43,13 +43,10 @@ The structure grows organically and stays intentionally simple.
 
 Typical sections may include:
 
-- `basics/` — syntax and core language ideas
-- `types/` — structs, interfaces, composition
-- `functions/` — errors, returns, design patterns
-- `concurrency/` — goroutines, channels, patterns
-- `stdlib-notes/` — practical standard library usage
-- `testing/` — tests, benchmarks, table-driven tests
-- `snippets/` — small examples worth remembering
+- `docs/` — Go concepts written in
+- `goconcept/` — structs, interfaces, composition
+- `problem/` — logical problem and solution
+- `projects/` — simple projects without any framework
 
 Organization serves **recall**, not completeness.
 
