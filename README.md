@@ -43,10 +43,10 @@ The structure grows organically and stays intentionally simple.
 
 Typical sections may include:
 
-- `docs/` — Go concepts written in
-- `goconcept/` — structs, interfaces, composition
-- `problem/` — logical problem and solution
-- `projects/` — simple projects without any framework
+- `docs/` — Go concepts in document format 
+- `goconcept/` — From basic to advanced go concepts
+- `problem/` — Logical problem and solution
+- `projects/` — Simple projects without any framework
 
 Organization serves **recall**, not completeness.
 
