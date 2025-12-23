@@ -5,8 +5,6 @@ on one or more values (called **operands**).
 
 Go operators are grouped based on what they do.
 
----
-
 ## 1. Arithmetic Operators
 
 Arithmetic operators are used for **basic math calculations**.
@@ -80,7 +78,7 @@ Logical operators work with **boolean values**.
 
 Example:
 
-````go
+```go
  age := 30
  isMarried := true
 
@@ -89,7 +87,6 @@ Example:
  !isMarried           // false
  ```
 
----
 
 ## 4. Assignment Operators
 
