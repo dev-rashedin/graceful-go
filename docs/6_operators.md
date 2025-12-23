@@ -9,13 +9,14 @@ Go operators are grouped based on what they do.
 
 Arithmetic operators are used for **basic math calculations**.
 
- - (-) Addition
- - (-) Subtraction
- - (-) Multiplication
- - (/) Division
- - (%) Modulus (remainder)
- - +(+) Increment
- - -(-) Decrement
+ - `+` → Addition  
+ - `-` → Subtraction  
+ - `*` → Multiplication  
+ - `/` → Division  
+ - `%` → Modulus (remainder)  
+ - `++` → Increment  
+ - `--` → Decrement
+
 
 
 Example:
