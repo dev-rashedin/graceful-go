@@ -9,13 +9,14 @@ Go operators are grouped based on what they do.
 
 Arithmetic operators are used for **basic math calculations**.
 
-- (-) Addition
-- (-) Subtraction
-- (-) Multiplication
-- (/) Division
-- (%) Modulus (remainder)
-- +(+) Increment
-- -(-) Decrement
+ - (-) Addition
+ - (-) Subtraction
+ - (-) Multiplication
+ - (/) Division
+ - (%) Modulus (remainder)
+ - +(+) Increment
+ - -(-) Decrement
+
 
 Example:
 
@@ -72,9 +73,10 @@ These are heavily used in:
 
 Logical operators work with **boolean values**.
 
-- (&&) AND → both conditions must be true
-- (||) OR → at least one condition must be true
-- (!) NOT → reverses a boolean value
+ - `&&` → AND → both conditions must be true  
+ - `||` → OR → at least one condition must be true  
+ - `!` → NOT → reverses a boolean value
+
 
 Example:
 
@@ -92,11 +94,12 @@ Example:
 
 Assignment operators are used to **assign or update values** in variables.
 
- - (=) Assign
- - (+=) Add and assign
- - (-=) Subtract and assign
- - (\*=) Multiply and assign
- - (/=) Divide and assign
+ - `=` → Assign  
+ - `+=` → Add and assign  
+ - `-=` → Subtract and assign  
+ - `*=` → Multiply and assign  
+ - `/=` → Divide and assign
+
 
 Example:
 
@@ -117,10 +120,10 @@ Bitwise operators work at the **binary (bit) level**.
 They are mainly used in **systems programming and performance-critical code**.
 
  - `&` → AND  
-- `|` → OR  
-- `^` → XOR  
-- `<<` → Left shift  
-- `>>` → Right shift  
+ - `|` → OR  
+ - `^` → XOR  
+ - `<<` → Left shift  
+ - `>>` → Right shift  
 
 ---
 
@@ -159,23 +162,53 @@ fmt.Println("A >>= 1 =", A) // Result: 28 → 00011100
 * Bitwise operators **only work on integers**. Floating-point numbers cannot use them.
 
 
----
-
 ## 6. Miscellaneous Operators
 
-Go also provides special operators.
+Go provides **special operators** for working with **pointers** and memory.  
+These are less commonly used in everyday programming but are essential for **systems programming** and **memory-efficient code**.
 
-### Address-of Operator (&)
 
-Gets the **memory address** of a variable.
+### Address-of Operator (`&`)
 
- F := 10
- ptr := &F
- fmt.Println(ptr)
+* Returns the **memory address** of a variable.  
+* Useful when you want to work with **pointers**.
 
-### Dereference Operator (\*)
+```go
+F := 10           // Declare an integer variable
+ptr := &F         // Get the memory address of F and store it in ptr
 
-Gets the **value stored at the memory address**.
+fmt.Println("Memory address of F:", ptr) // Example output: 0xc0000180a8
+```
 
- fmt.Println(*ptr) // 10
-````
+*Notes:*  
+
+- `&` can only be used with **variables**, not constants or literals.  
+- The result is a **pointer** that stores the address of the variable.
+
+---
+
+### Dereference Operator (`*`)
+
+* Returns the **value stored at a pointer's memory address**.  
+* Allows you to **access or modify the value** of the original variable through its pointer.
+
+```go
+fmt.Println("Value stored at ptr:", *ptr) // Output: 10
+
+*ptr = 20                              // Modify the value of F through the pointer
+fmt.Println("Updated value of F:", F)  // Output: 20
+```
+
+*Notes:*  
+
+- `*` is used to **dereference a pointer**.  
+- Combined with `&`, you can **read or change a variable via its memory address**.  
+- This is the foundation for pointers in Go.
+
+
+### Summary
+
+- `&` → get the **memory address** of a variable  
+- `*` → get or **modify the value** at a memory address  
+- Together, they allow **pointer manipulation** and **direct memory access**  
+- Mostly used in **low-level programming** or when **optimizing memory usage**
