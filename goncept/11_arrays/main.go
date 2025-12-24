@@ -19,6 +19,12 @@ var newBalance = [5]float32{100.00, 2.00, 3.00, 4.00, 5.00}
 // Initializing while omitting the size of the array elements
 var newBalance2 = []float32{100.00, 2.00, 3.00, 4.00, 5.00}
 
+var grades = [4]float64{97, 85, 93, 78}
+
+var names = [3]string{"John", "Jane", "Joe"}
+
+var programmingLang = [3]string{"JavaScript", "Python", "Go"}
+
 
 func main(){
 	var n [10]int
