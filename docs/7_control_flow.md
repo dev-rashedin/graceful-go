@@ -3,10 +3,9 @@
 Control flow allows you to **control the order of execution** in a program.  
 Go supports **conditional statements** (`if-else`) and **loops** (`for`, nested loops, and infinite loops).
 
-
 ## 1. Conditional Statements (If-Else)
 
-Used to **execute a block of code only if a condition is true**.  
+Used to **execute a block of code only if a condition is true**.
 
 ### If Statement
 
@@ -20,11 +19,9 @@ if age >= 18 {
 }
 ```
 
-- `if` checks a condition.  
-- `else` executes if the condition is false.  
+- `if` checks a condition.
+- `else` executes if the condition is false.
 - Curly braces `{}` define the **code block** for each condition.
-
----
 
 ### If-Else If Ladder
 
@@ -48,11 +45,10 @@ if score >= 90 {
 }
 ```
 
-- Conditions are **evaluated in order**.  
-- The first **true condition** executes.  
-- Use `else if` for additional checks.  
+- Conditions are **evaluated in order**.
+- The first **true condition** executes.
+- Use `else if` for additional checks.
 - `else` handles all **remaining cases**.
-
 
 ## 2. Loops
 
@@ -67,11 +63,9 @@ for i := 0; i < 10; i++ {
 }
 ```
 
-- `i := 0` → start  
-- `i < 10` → condition  
-- `i++` → increment after each iteration  
-
----
+- `i := 0` → start
+- `i < 10` → condition
+- `i++` → increment after each iteration
 
 ### 2B. Nested Loops
 
@@ -89,14 +83,13 @@ for i := 1; i <= 3; i++ {
 // 3 x 1 = 3  3 x 2 = 6  3 x 3 = 9
 ```
 
-- Inner loop executes **completely for each iteration** of the outer loop.  
+- Inner loop executes **completely for each iteration** of the outer loop.
 - Useful for **tables, grids, or matrix operations**.
-
----
 
 ### 2C. Loop Control Statements
 
 #### Break
+
 Stops the loop **immediately**.
 
 ```go
@@ -111,6 +104,7 @@ for i := 0; i < 10; i++ {
 ```
 
 #### Continue
+
 Skips the **current iteration** and continues to the next.
 
 ```go
@@ -125,6 +119,7 @@ for i := 0; i < 10; i++ {
 ```
 
 #### Goto
+
 Jumps to a **labeled statement**.
 
 ```go
@@ -140,10 +135,8 @@ fmt.Println("Hi Mr. Endrewvaski!!")
 //         Hi Mr. Endrewvaski!!
 ```
 
-- `goto` is **rarely used** in modern Go.  
+- `goto` is **rarely used** in modern Go.
 - Can create **jump points** in code.
-
----
 
 ### 2D. Infinite Loop
 
@@ -159,16 +152,14 @@ fmt.Println("This is an infinite loop!")
 goto start
 ```
 
-- Loops without a **termination condition** run indefinitely.  
-- Useful for **servers or event loops**.  
+- Loops without a **termination condition** run indefinitely.
+- Useful for **servers or event loops**.
 - Always ensure a way to **exit** when needed.
-
----
 
 ### Notes
 
-* Use **if-else** for **conditional execution**.  
-* Use **for loops** for **repetition**.  
-* Nested loops allow **complex patterns**.  
-* `break`, `continue`, and `goto` help **control loop execution**.  
-* Infinite loops are common in **concurrent or server programs**.
+- Use **if-else** for **conditional execution**.
+- Use **for loops** for **repetition**.
+- Nested loops allow **complex patterns**.
+- `break`, `continue`, and `goto` help **control loop execution**.
+- Infinite loops are common in **concurrent or server programs**.

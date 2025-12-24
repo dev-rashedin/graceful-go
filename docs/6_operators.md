@@ -9,15 +9,13 @@ Go operators are grouped based on what they do.
 
 Arithmetic operators are used for **basic math calculations**.
 
- - `+` → Addition  
- - `-` → Subtraction  
- - `*` → Multiplication  
- - `/` → Division  
- - `%` → Modulus (remainder)  
- - `++` → Increment  
- - `--` → Decrement
-
-
+- `+` → Addition
+- `-` → Subtraction
+- `*` → Multiplication
+- `/` → Division
+- `%` → Modulus (remainder)
+- `++` → Increment
+- `--` → Decrement
 
 Example:
 
@@ -68,16 +66,13 @@ These are heavily used in:
 - loops
 - decision making
 
----
-
 ## 3. Logical Operators
 
 Logical operators work with **boolean values**.
 
- - `&&` → AND → both conditions must be true  
- - `||` → OR → at least one condition must be true  
- - `!` → NOT → reverses a boolean value
-
+- `&&` → AND → both conditions must be true
+- `||` → OR → at least one condition must be true
+- `!` → NOT → reverses a boolean value
 
 Example:
 
@@ -88,19 +83,17 @@ Example:
  age > 18 && isMarried // true
  age > 18 || isMarried // false
  !isMarried           // false
- ```
-
+```
 
 ## 4. Assignment Operators
 
 Assignment operators are used to **assign or update values** in variables.
 
- - `=` → Assign  
- - `+=` → Add and assign  
- - `-=` → Subtract and assign  
- - `*=` → Multiply and assign  
- - `/=` → Divide and assign
-
+- `=` → Assign
+- `+=` → Add and assign
+- `-=` → Subtract and assign
+- `*=` → Multiply and assign
+- `/=` → Divide and assign
 
 Example:
 
@@ -114,19 +107,16 @@ Example:
  B /= 2  // B = B / 2 → 2
 ```
 
-
 ## 5. Bitwise Operators
 
 Bitwise operators work at the **binary (bit) level**.
 They are mainly used in **systems programming and performance-critical code**.
 
- - `&` → AND  
- - `|` → OR  
- - `^` → XOR  
- - `<<` → Left shift  
- - `>>` → Right shift  
-
----
+- `&` → AND
+- `|` → OR
+- `^` → XOR
+- `<<` → Left shift
+- `>>` → Right shift
 
 ### Bitwise Operators Example with Explanations
 
@@ -156,23 +146,21 @@ fmt.Println("A >>= 1 =", A) // Result: 28 → 00011100
 
 ### Notes
 
-* `&` → use when you need **common set bits**.  
-* `|` → use when you want **union of bits**.  
-* `^` → use for **toggling or masking bits**.  
-* `<<` and `>>` → use for **fast multiplication/division by powers of 2**.  
-* Bitwise operators **only work on integers**. Floating-point numbers cannot use them.
-
+- `&` → use when you need **common set bits**.
+- `|` → use when you want **union of bits**.
+- `^` → use for **toggling or masking bits**.
+- `<<` and `>>` → use for **fast multiplication/division by powers of 2**.
+- Bitwise operators **only work on integers**. Floating-point numbers cannot use them.
 
 ## 6. Miscellaneous Operators
 
 Go provides **special operators** for working with **pointers** and memory.  
 These are less commonly used in everyday programming but are essential for **systems programming** and **memory-efficient code**.
 
-
 ### Address-of Operator (`&`)
 
-* Returns the **memory address** of a variable.  
-* Useful when you want to work with **pointers**.
+- Returns the **memory address** of a variable.
+- Useful when you want to work with **pointers**.
 
 ```go
 F := 10           // Declare an integer variable
@@ -181,17 +169,15 @@ ptr := &F         // Get the memory address of F and store it in ptr
 fmt.Println("Memory address of F:", ptr) // Example output: 0xc0000180a8
 ```
 
-*Notes:*  
+_Notes:_
 
-- `&` can only be used with **variables**, not constants or literals.  
+- `&` can only be used with **variables**, not constants or literals.
 - The result is a **pointer** that stores the address of the variable.
-
----
 
 ### Dereference Operator (`*`)
 
-* Returns the **value stored at a pointer's memory address**.  
-* Allows you to **access or modify the value** of the original variable through its pointer.
+- Returns the **value stored at a pointer's memory address**.
+- Allows you to **access or modify the value** of the original variable through its pointer.
 
 ```go
 fmt.Println("Value stored at ptr:", *ptr) // Output: 10
@@ -200,16 +186,15 @@ fmt.Println("Value stored at ptr:", *ptr) // Output: 10
 fmt.Println("Updated value of F:", F)  // Output: 20
 ```
 
-*Notes:*  
+_Notes:_
 
-- `*` is used to **dereference a pointer**.  
-- Combined with `&`, you can **read or change a variable via its memory address**.  
+- `*` is used to **dereference a pointer**.
+- Combined with `&`, you can **read or change a variable via its memory address**.
 - This is the foundation for pointers in Go.
-
 
 ### Summary
 
-- `&` → get the **memory address** of a variable  
-- `*` → get or **modify the value** at a memory address  
-- Together, they allow **pointer manipulation** and **direct memory access**  
+- `&` → get the **memory address** of a variable
+- `*` → get or **modify the value** at a memory address
+- Together, they allow **pointer manipulation** and **direct memory access**
 - Mostly used in **low-level programming** or when **optimizing memory usage**

@@ -51,7 +51,6 @@ func main() {
 - `g` is accessible in `main()` and can also be accessed from other functions in the same package.  
 - Global variables **persist for the lifetime of the program**.
 
----
 
 ## 3. Function Parameters Scope
 
@@ -72,7 +71,6 @@ fmt.Println("Sum is", sum) // Output: Sum is 12
 - `x` and `y` exist **only inside `add()`**  
 - Outside the function, they **do not exist**.
 
----
 
 ## 4. Variable Shadowing
 
