@@ -17,7 +17,7 @@ var balance [10]float32
 var newBalance = [5]float32{100.00, 2.00, 3.00, 4.00, 5.00}
 
 // Initializing while omitting the size of the array elements
-var newBalance2 = []float32{100.00, 2.00, 3.00, 4.00, 5.00}
+var newBalance2 = [...]float32{100.00, 2.00, 3.00, 4.00, 5.00}
 
 var grades = [4]float64{97, 85, 93, 78}
 
