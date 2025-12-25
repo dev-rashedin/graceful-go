@@ -1,5 +1,5 @@
 // SLICES
-// Slices are more dynamic and more flexible  than arrays data type. Simple a slice can  allow you to create sequences that can change in size if you want
+// Slices are more dynamic and more flexible  than arrays data type. Simply a slice can  allow you to create sequences that can change in size if you want
 // Similar to arrays in javaScript and lists in python
 
 package main
@@ -30,6 +30,22 @@ func main(){
 	// Append() and Copy()
 	new_numbers := []int{}
 	new_numbers = append(new_numbers, 0, 1, 2, 3, 4, 5, 6)
+		
+	new_numbers1:= make([]int, len(numbers), cap(numbers) * 2)
 
 	fmt.Println("new numbers slice with append", new_numbers)
+	fmt.Println("new_numbers1 slice with append", new_numbers1)
+
+	// copying numbers
+	copy(new_numbers1, new_numbers)
+	fmt.Println("new_numbers1 slice after copy", new_numbers1)
+
+	// Nil Slice
+	var num []int // nil slice
+	fmt.Println("Nil Slice", num)
+
+	if num == nil {
+		fmt.Println("Slice is nill")
+	}
+
 }
