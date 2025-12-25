@@ -9,7 +9,7 @@ import (
 
 
 func main(){
-	fmt.Println("---- Type Casting ----")
+	fmt.Println("---- Type Casting -")
 
 	// covert int to float
 	var total int = 20;
