@@ -43,11 +43,12 @@ Example idea:
 ## 3. Interface vs Struct (Very Important)
 
 | Struct | Interface |
-||--|
+|--------|-----------|
 | Holds **data (fields)** | Holds **method signatures** |
 | Defines **what something is** | Defines **what something can do** |
 | Has memory | No memory |
 | Example: `Circle`, `Rectangle` | Example: `Shape` |
+
 
 ## 4. Defining an Interface
 
